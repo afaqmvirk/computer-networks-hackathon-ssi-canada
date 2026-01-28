@@ -1,0 +1,17 @@
+
+Important LoRaWAN Terminology
+
+DevEUI     - unique device identifier (64 bit)
+DevAddr    - device address (32 bit)
+AppEUI     - applicaiton identifier (64 bit)
+GatewayEUI - gateway identifier (64 bit)
+
+Device Information
+
+Dragino DDS75-LB Ultrasonic Distance Sensor    https://www.dragino.com/products/distance-level-sensor/item/271-dds75-lb-ls.html
+Makerfabs Soil Moisture Sensor                 https://github.com/Makerfabs/LoraWAN-Soil-Moisture?tab=readme-ov-file
+SW3L                                           https://www.dragino.com/products/water-meter-flow-sensor/item/222-sw3l.html
+EM500-UDL                                      https://www.milesight.com/iot/product/lorawan-sensor/em500-udl
+Multitech RBS301 Temp Sensor                   https://multitech.com/wp-content/uploads/RB00020_Wireless_NoProbe_Temperature_Sensor_User_Guide.pdf
+rbs305-ath                                     https://multitech.com/wp-content/uploads/RB00013_Wireless_Air_Temp_Humidity_Sensor_User_Guide.pdf
+rbs301-dws                                     https://multitech.com/product/lorawan-door-window-sensor-for-indoor-use-north-america/

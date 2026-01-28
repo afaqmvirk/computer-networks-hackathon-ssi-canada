@@ -1,0 +1,18 @@
+{
+  "deduplicationId": "99714068-998d-4c32-bdc2-94abd8915f32",
+  "time": "2026-01-21T20:11:53.206+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "675582a5-5e7b-4e33-86ea-3325b7cb88e4",
+    "applicationName": "L3",
+    "deviceProfileId": "60ba97e4-d689-4a65-935a-acb5879b1239",
+    "deviceProfileName": "Multitech RBS301 Temp Sensor",
+    "deviceName": "T/H Sensor 04 - Northlands Trailer",
+    "devEui": "7894e8000005874b",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "00424d60",
+  "regionConfigId": "us915_1"
+}

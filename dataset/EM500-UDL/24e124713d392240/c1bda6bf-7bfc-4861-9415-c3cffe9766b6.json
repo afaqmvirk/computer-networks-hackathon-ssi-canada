@@ -1,0 +1,48 @@
+{
+  "deduplicationId": "24199b9b-80af-42d2-9aa5-786829b830c5",
+  "time": "2026-01-17T21:54:35.505595544+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "5fe1c19e-491a-4968-9a4a-622c073e4a0c",
+    "applicationName": "YK Testing",
+    "deviceProfileId": "959a15ef-0ae4-49ec-9293-0a0c4cc9c339",
+    "deviceProfileName": "EM500-UDL",
+    "deviceName": "Milesight Ultrasonic 1",
+    "devEui": "24e124713d392240",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "0098ebde",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 28024,
+  "fPort": 0,
+  "confirmed": false,
+  "data": "",
+  "object": {},
+  "rxInfo": [
+    {
+      "gatewayId": "0016c001f17adc38",
+      "uplinkId": 2187748929,
+      "nsTime": "2026-01-17T21:54:35.291072291+00:00",
+      "rssi": -71,
+      "snr": 11,
+      "channel": 2,
+      "location": {},
+      "context": "d/fY0w==",
+      "crcStatus": "CRC_OK"
+    }
+  ],
+  "txInfo": {
+    "frequency": 904300000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

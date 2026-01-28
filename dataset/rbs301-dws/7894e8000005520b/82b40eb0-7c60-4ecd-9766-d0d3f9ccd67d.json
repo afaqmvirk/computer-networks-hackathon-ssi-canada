@@ -1,0 +1,58 @@
+{
+  "deduplicationId": "6df110b2-adaa-4347-b095-65f93992ab4f",
+  "time": "2026-01-20T21:19:57.541+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "675582a5-5e7b-4e33-86ea-3325b7cb88e4",
+    "applicationName": "L3",
+    "deviceProfileId": "d08ab548-90d8-4d7f-897b-af92d741a4f7",
+    "deviceProfileName": "rbs301-dws",
+    "deviceName": "Door Sensor 10",
+    "devEui": "7894e8000005520b",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "01d36983",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 204,
+  "fPort": 1,
+  "confirmed": false,
+  "data": "E/sAmwU=",
+  "object": {
+    "lastDownlinkRssi": -101,
+    "subBand": 0,
+    "event": "LINK_QUALITY",
+    "lastDownlinkSnr": 5
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "008000000002aa4b",
+      "uplinkId": 47560,
+      "nsTime": "2026-01-20T21:19:57.618935502+00:00",
+      "timeSinceGpsEpoch": "1452979215.541s",
+      "rssi": -98,
+      "snr": 9.5,
+      "channel": 7,
+      "rfChain": 1,
+      "location": {
+        "latitude": 61.35225,
+        "longitude": -117.64854,
+        "altitude": 135
+      },
+      "context": "rL3hFA=="
+    }
+  ],
+  "txInfo": {
+    "frequency": 905300000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

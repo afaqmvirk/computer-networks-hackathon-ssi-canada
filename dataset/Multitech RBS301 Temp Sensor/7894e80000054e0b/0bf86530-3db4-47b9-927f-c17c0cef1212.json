@@ -1,0 +1,56 @@
+{
+  "deduplicationId": "4425b36c-56c5-4be8-83b5-c65fd6b266ab",
+  "time": "2026-01-17T01:57:49.234+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "675582a5-5e7b-4e33-86ea-3325b7cb88e4",
+    "applicationName": "L3",
+    "deviceProfileId": "60ba97e4-d689-4a65-935a-acb5879b1239",
+    "deviceProfileName": "Multitech RBS301 Temp Sensor",
+    "deviceName": "Temp Sensor 07 - Batchelor 1",
+    "devEui": "7894e80000054e0b",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "005c153e",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 8082,
+  "fPort": 1,
+  "confirmed": false,
+  "data": "EBkAFQA=",
+  "object": {
+    "eventType": "PERIODIC_REPORT",
+    "humidity": 0,
+    "temperature": 21
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "008000000002aa4b",
+      "uplinkId": 8800,
+      "nsTime": "2026-01-17T01:57:49.314204670+00:00",
+      "timeSinceGpsEpoch": "1452650287.234s",
+      "rssi": -89,
+      "snr": 9.5,
+      "channel": 1,
+      "location": {
+        "latitude": 61.35227,
+        "longitude": -117.64838,
+        "altitude": 140
+      },
+      "context": "kbBHQw=="
+    }
+  ],
+  "txInfo": {
+    "frequency": 904100000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

@@ -1,0 +1,20 @@
+{
+  "deduplicationId": "e3c30b57-5a88-457b-b151-9c54f235d789",
+  "time": "2026-01-19T22:16:48.225+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "44e81855-d8ba-46c2-9e79-751913962e0f",
+    "applicationName": "Kanata Monitoring",
+    "deviceProfileId": "6c94d1f8-6bbb-42af-b877-253ecc501987",
+    "deviceProfileName": "rbs305-ath",
+    "deviceName": "ATH 1",
+    "devEui": "7894e80000027a0a",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "margin": 6,
+  "externalPowerSource": false,
+  "batteryLevelUnavailable": false,
+  "batteryLevel": 84.25197
+}

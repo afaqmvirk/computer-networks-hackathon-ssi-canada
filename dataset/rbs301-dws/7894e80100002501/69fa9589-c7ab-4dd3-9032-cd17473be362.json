@@ -1,0 +1,68 @@
+{
+  "deduplicationId": "841e3bc0-8f6e-4dd9-8d76-aa7240c42696",
+  "time": "2026-01-19T18:40:14.554+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "1551288c-ec17-4af1-8c88-55406d9f6b26",
+    "applicationName": "YK Monitoring",
+    "deviceProfileId": "d08ab548-90d8-4d7f-897b-af92d741a4f7",
+    "deviceProfileName": "rbs301-dws",
+    "deviceName": "DWS 1",
+    "devEui": "7894e80100002501",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "01ad5c8b",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 519,
+  "fPort": 2,
+  "confirmed": false,
+  "data": "EgMA",
+  "object": {
+    "open": 0,
+    "eventType": "CLOSED"
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "00800000a000e24f",
+      "uplinkId": 17298,
+      "nsTime": "2026-01-19T18:40:14.702890622+00:00",
+      "timeSinceGpsEpoch": "1452883232.554s",
+      "rssi": -109,
+      "snr": 4,
+      "channel": 6,
+      "rfChain": 1,
+      "location": {
+        "latitude": 62.45437,
+        "longitude": -114.36109,
+        "altitude": 220
+      },
+      "context": "PVAE9g=="
+    },
+    {
+      "gatewayId": "0016c001f17adc38",
+      "uplinkId": 521381613,
+      "nsTime": "2026-01-19T18:40:14.607462010+00:00",
+      "rssi": -59,
+      "snr": 14,
+      "channel": 6,
+      "rfChain": 1,
+      "location": {},
+      "context": "/Jy88Q==",
+      "crcStatus": "CRC_OK"
+    }
+  ],
+  "txInfo": {
+    "frequency": 905100000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

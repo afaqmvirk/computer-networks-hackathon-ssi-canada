@@ -1,0 +1,57 @@
+{
+  "deduplicationId": "a84d5880-daf8-439d-9a7d-d62b9fa74c74",
+  "time": "2026-01-28T06:37:55.885+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "675582a5-5e7b-4e33-86ea-3325b7cb88e4",
+    "applicationName": "L3",
+    "deviceProfileId": "60ba97e4-d689-4a65-935a-acb5879b1239",
+    "deviceProfileName": "Multitech RBS301 Temp Sensor",
+    "deviceName": "Temp sensor 01 - Lo's Basement",
+    "devEui": "7894e80000054e0e",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "00dd821b",
+  "adr": true,
+  "dr": 2,
+  "fCnt": 216,
+  "fPort": 1,
+  "confirmed": false,
+  "data": "HRkAGCA=",
+  "object": {
+    "temperature": 24,
+    "humidity": 0,
+    "eventType": "PERIODIC_REPORT"
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "008000000002aa4b",
+      "uplinkId": 33990,
+      "nsTime": "2026-01-28T06:37:55.954922149+00:00",
+      "timeSinceGpsEpoch": "1453617493.885s",
+      "rssi": -107,
+      "snr": 4,
+      "channel": 5,
+      "rfChain": 1,
+      "location": {
+        "latitude": 61.35234,
+        "longitude": -117.64843,
+        "altitude": 168
+      },
+      "context": "tshAPA=="
+    }
+  ],
+  "txInfo": {
+    "frequency": 904900000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 8,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

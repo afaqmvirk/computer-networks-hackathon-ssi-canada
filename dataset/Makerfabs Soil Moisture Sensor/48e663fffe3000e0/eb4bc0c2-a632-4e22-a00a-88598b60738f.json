@@ -1,0 +1,59 @@
+{
+  "deduplicationId": "e6100334-736f-4641-bb45-716e2019a546",
+  "time": "2026-01-24T19:19:16.893+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "66b43969-cb0f-4c60-a5bc-f95bfb2a357e",
+    "applicationName": "Chris' Testing",
+    "deviceProfileId": "f3e6c558-a212-439d-b834-193639f6f8b1",
+    "deviceProfileName": "Makerfabs Soil Moisture Sensor",
+    "deviceName": "Ringo",
+    "devEui": "48e663fffe3000e0",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "01df4381",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 54,
+  "fPort": 2,
+  "confirmed": true,
+  "data": "ADcEwB4DKACl",
+  "object": {
+    "battery_v": 3,
+    "temp": 16.5,
+    "serial": 55,
+    "hum": 80.8,
+    "soil_val": 1216
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "00800000a000e250",
+      "uplinkId": 21072,
+      "nsTime": "2026-01-24T19:19:17.049050998+00:00",
+      "timeSinceGpsEpoch": "1453317574.893s",
+      "rssi": -70,
+      "snr": 11,
+      "channel": 6,
+      "rfChain": 1,
+      "location": {
+        "latitude": 45.34014,
+        "longitude": -75.89885,
+        "altitude": 98
+      },
+      "context": "zl4l+w=="
+    }
+  ],
+  "txInfo": {
+    "frequency": 905100000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

@@ -1,0 +1,51 @@
+{
+  "deduplicationId": "9398e5fc-a49b-43c7-8ba4-94a783db54fc",
+  "time": "2026-01-22T15:15:44.463523025+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "1551288c-ec17-4af1-8c88-55406d9f6b26",
+    "applicationName": "YK Monitoring",
+    "deviceProfileId": "d08ab548-90d8-4d7f-897b-af92d741a4f7",
+    "deviceProfileName": "rbs301-dws",
+    "deviceName": "DWS 1",
+    "devEui": "7894e80100002501",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "01ad5c8b",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 670,
+  "fPort": 2,
+  "confirmed": false,
+  "data": "GQMA",
+  "object": {
+    "open": 0,
+    "eventType": "CLOSED"
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "0016c001f17adc38",
+      "uplinkId": 4260088644,
+      "nsTime": "2026-01-22T15:15:44.251773187+00:00",
+      "rssi": -54,
+      "snr": 13.75,
+      "channel": 4,
+      "location": {},
+      "context": "esEscA==",
+      "crcStatus": "CRC_OK"
+    }
+  ],
+  "txInfo": {
+    "frequency": 904700000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

@@ -1,0 +1,55 @@
+{
+  "deduplicationId": "050e394a-a8a9-47e9-987c-5e7e3e8f8f88",
+  "time": "2026-01-23T05:46:10.926+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "675582a5-5e7b-4e33-86ea-3325b7cb88e4",
+    "applicationName": "L3",
+    "deviceProfileId": "60ba97e4-d689-4a65-935a-acb5879b1239",
+    "deviceProfileName": "Multitech RBS301 Temp Sensor",
+    "deviceName": "T/H Sensor 04 - Northlands Trailer",
+    "devEui": "7894e8000005874b",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "00424d60",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 148,
+  "fPort": 1,
+  "confirmed": false,
+  "data": "Hg0AHwAHUA==",
+  "object": {
+    "temperature": 31,
+    "eventType": "PERIODIC_REPORT",
+    "humidity": 7.5
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "008000000002aa4b",
+      "uplinkId": 12872,
+      "nsTime": "2026-01-23T05:46:10.992798012+00:00",
+      "timeSinceGpsEpoch": "1453182388.926s",
+      "rssi": -105,
+      "snr": 4.5,
+      "location": {
+        "latitude": 61.35232,
+        "longitude": -117.64848,
+        "altitude": 164
+      },
+      "context": "C/khOw=="
+    }
+  ],
+  "txInfo": {
+    "frequency": 903900000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

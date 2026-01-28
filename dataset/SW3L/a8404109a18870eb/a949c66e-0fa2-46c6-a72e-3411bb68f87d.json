@@ -1,0 +1,20 @@
+{
+  "deduplicationId": "06543d1f-0ceb-4dcc-af12-30fdb6e51205",
+  "time": "2026-01-23T21:36:26.359168331+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "5fe1c19e-491a-4968-9a4a-622c073e4a0c",
+    "applicationName": "YK Testing",
+    "deviceProfileId": "ec984c9a-ce66-4317-8189-6fe73584db84",
+    "deviceProfileName": "SW3L",
+    "deviceName": "Flow Sensor 1",
+    "devEui": "a8404109a18870eb",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "margin": 8,
+  "externalPowerSource": false,
+  "batteryLevelUnavailable": false,
+  "batteryLevel": 100
+}

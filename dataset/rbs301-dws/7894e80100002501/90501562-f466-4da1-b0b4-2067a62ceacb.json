@@ -1,0 +1,67 @@
+{
+  "deduplicationId": "9e4da2e0-e0fc-4eb4-9f33-d425305115fb",
+  "time": "2026-01-19T18:38:39.905+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "1551288c-ec17-4af1-8c88-55406d9f6b26",
+    "applicationName": "YK Monitoring",
+    "deviceProfileId": "d08ab548-90d8-4d7f-897b-af92d741a4f7",
+    "deviceProfileName": "rbs301-dws",
+    "deviceName": "DWS 1",
+    "devEui": "7894e80100002501",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "01ad5c8b",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 514,
+  "fPort": 2,
+  "confirmed": false,
+  "data": "HQMB",
+  "object": {
+    "open": 1,
+    "eventType": "OPEN"
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "0016c001f17adc38",
+      "uplinkId": 3957943559,
+      "nsTime": "2026-01-19T18:38:39.952190464+00:00",
+      "rssi": -62,
+      "snr": 13.5,
+      "channel": 4,
+      "location": {},
+      "context": "9viEBQ==",
+      "crcStatus": "CRC_OK"
+    },
+    {
+      "gatewayId": "00800000a000e24f",
+      "uplinkId": 13541,
+      "nsTime": "2026-01-19T18:38:40.033987649+00:00",
+      "timeSinceGpsEpoch": "1452883137.905s",
+      "rssi": -111,
+      "snr": 3.5,
+      "channel": 4,
+      "rfChain": 1,
+      "location": {
+        "latitude": 62.45435,
+        "longitude": -114.36111,
+        "altitude": 221
+      },
+      "context": "N6vL6g=="
+    }
+  ],
+  "txInfo": {
+    "frequency": 904700000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

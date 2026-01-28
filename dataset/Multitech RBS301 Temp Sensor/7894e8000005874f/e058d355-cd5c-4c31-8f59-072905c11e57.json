@@ -1,0 +1,55 @@
+{
+  "deduplicationId": "8b31dca4-c428-4155-affb-ce4bcb88ee92",
+  "time": "2026-01-22T15:08:34.394+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "675582a5-5e7b-4e33-86ea-3325b7cb88e4",
+    "applicationName": "L3",
+    "deviceProfileId": "60ba97e4-d689-4a65-935a-acb5879b1239",
+    "deviceProfileName": "Multitech RBS301 Temp Sensor",
+    "deviceName": "T/H Sensor 01 - Lo's House",
+    "devEui": "7894e8000005874f",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "01e862ad",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 36,
+  "fPort": 1,
+  "confirmed": false,
+  "data": "Ew0AFZAMIA==",
+  "object": {
+    "event": "UNKNOWN_EVENT_TYPE",
+    "rawType": "0D"
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "008000000002aa4b",
+      "uplinkId": 48198,
+      "nsTime": "2026-01-22T15:08:34.466275600+00:00",
+      "timeSinceGpsEpoch": "1453129732.394s",
+      "rssi": -99,
+      "snr": 7.8,
+      "channel": 1,
+      "location": {
+        "latitude": 61.35232,
+        "longitude": -117.64842,
+        "altitude": 163
+      },
+      "context": "LGGs8w=="
+    }
+  ],
+  "txInfo": {
+    "frequency": 904100000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

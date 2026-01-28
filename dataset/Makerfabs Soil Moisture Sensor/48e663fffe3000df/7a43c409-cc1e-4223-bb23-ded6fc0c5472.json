@@ -1,0 +1,20 @@
+{
+  "deduplicationId": "1e809d58-ba0c-4617-aee0-cb2a903330dc",
+  "time": "2026-01-24T17:30:42.164+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "66b43969-cb0f-4c60-a5bc-f95bfb2a357e",
+    "applicationName": "Chris' Testing",
+    "deviceProfileId": "f3e6c558-a212-439d-b834-193639f6f8b1",
+    "deviceProfileName": "Makerfabs Soil Moisture Sensor",
+    "deviceName": "John",
+    "devEui": "48e663fffe3000df",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "margin": 10,
+  "externalPowerSource": true,
+  "batteryLevelUnavailable": false,
+  "batteryLevel": 0
+}

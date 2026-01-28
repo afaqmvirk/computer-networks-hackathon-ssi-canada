@@ -1,0 +1,57 @@
+{
+  "deduplicationId": "ed013e5d-1e0e-45e1-9b51-d1443ec1fea4",
+  "time": "2026-01-17T18:18:49.517+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "675582a5-5e7b-4e33-86ea-3325b7cb88e4",
+    "applicationName": "L3",
+    "deviceProfileId": "2eb50646-80cb-4fb8-a9e5-f72fb99c704f",
+    "deviceProfileName": "Dragino DDS75-LB Ultrasonic Distance Sensor",
+    "deviceName": "L3 Ultrasonic Tank Level 01",
+    "devEui": "a84041bbbf5946fc",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "00981150",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 1307,
+  "fPort": 2,
+  "confirmed": false,
+  "data": "DPkBKQAMzAE=",
+  "object": {
+    "distance": 297,
+    "eventType": "PERIODIC_REPORT",
+    "Bat": 3.321
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "008000000002aa4b",
+      "uplinkId": 61866,
+      "nsTime": "2026-01-17T18:18:49.587502361+00:00",
+      "timeSinceGpsEpoch": "1452709147.517s",
+      "rssi": -87,
+      "snr": 8.5,
+      "channel": 5,
+      "rfChain": 1,
+      "location": {
+        "latitude": 61.35231,
+        "longitude": -117.64839,
+        "altitude": 167
+      },
+      "context": "4xu5XA=="
+    }
+  ],
+  "txInfo": {
+    "frequency": 904900000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

@@ -1,0 +1,60 @@
+{
+  "deduplicationId": "8f36f214-042a-4030-b45b-15a168c919e0",
+  "time": "2026-01-18T06:54:13.818+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "44e81855-d8ba-46c2-9e79-751913962e0f",
+    "applicationName": "Kanata Monitoring",
+    "deviceProfileId": "6c94d1f8-6bbb-42af-b877-253ecc501987",
+    "deviceProfileName": "rbs305-ath",
+    "deviceName": "Kanata ATH 3 Yellow",
+    "devEui": "7894e80000027af8",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "0015e4b2",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 3198,
+  "fPort": 2,
+  "confirmed": false,
+  "data": "Hg0Ag4BUcA==",
+  "object": {
+    "Counter": 14,
+    "humidity": 85,
+    "temperature": -4,
+    "Protocol": 1,
+    "Type": "ATH",
+    "Event": "Periodic Report"
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "00800000a000e250",
+      "uplinkId": 977,
+      "nsTime": "2026-01-18T06:54:13.945047465+00:00",
+      "timeSinceGpsEpoch": "1452754471.818s",
+      "rssi": -93,
+      "snr": 10.8,
+      "channel": 4,
+      "rfChain": 1,
+      "location": {
+        "latitude": 45.34016,
+        "longitude": -75.89885,
+        "altitude": 92
+      },
+      "context": "stYFQg=="
+    }
+  ],
+  "txInfo": {
+    "frequency": 904700000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

@@ -1,0 +1,59 @@
+{
+  "deduplicationId": "503a5552-fe6c-4126-b748-febafcfef732",
+  "time": "2026-01-25T11:27:23.384+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "66b43969-cb0f-4c60-a5bc-f95bfb2a357e",
+    "applicationName": "Chris' Testing",
+    "deviceProfileId": "f3e6c558-a212-439d-b834-193639f6f8b1",
+    "deviceProfileName": "Makerfabs Soil Moisture Sensor",
+    "deviceName": "Paul",
+    "devEui": "48e663fffe3000dd",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "012f7cbd",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 70,
+  "fPort": 2,
+  "confirmed": true,
+  "data": "AEcEbB4BbACz",
+  "object": {
+    "soil_val": 1132,
+    "temp": 17.9,
+    "hum": 36.4,
+    "battery_v": 3,
+    "serial": 71
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "00800000a000e250",
+      "uplinkId": 9372,
+      "nsTime": "2026-01-25T11:27:23.460819549+00:00",
+      "timeSinceGpsEpoch": "1453375661.384s",
+      "rssi": -67,
+      "snr": 14.5,
+      "channel": 4,
+      "rfChain": 1,
+      "location": {
+        "latitude": 45.34011,
+        "longitude": -75.89889,
+        "altitude": 87
+      },
+      "context": "VJa8Jw=="
+    }
+  ],
+  "txInfo": {
+    "frequency": 904700000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

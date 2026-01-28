@@ -1,0 +1,63 @@
+{
+  "deduplicationId": "8a667809-852d-468f-aa3d-bbdfd9b8ffe6",
+  "time": "2026-01-26T09:40:51.229+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "5fe1c19e-491a-4968-9a4a-622c073e4a0c",
+    "applicationName": "YK Testing",
+    "deviceProfileId": "959a15ef-0ae4-49ec-9293-0a0c4cc9c339",
+    "deviceProfileName": "EM500-UDL",
+    "deviceName": "Milesight Ultrasonic 1",
+    "devEui": "24e124713d392240",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "0098ebde",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 28634,
+  "fPort": 0,
+  "confirmed": false,
+  "data": "",
+  "object": {},
+  "rxInfo": [
+    {
+      "gatewayId": "0016c001f17adc38",
+      "uplinkId": 1837078000,
+      "nsTime": "2026-01-26T09:40:51.275007671+00:00",
+      "rssi": -71,
+      "snr": 10.75,
+      "channel": 2,
+      "location": {},
+      "context": "RHiEjg==",
+      "crcStatus": "CRC_OK"
+    },
+    {
+      "gatewayId": "00800000a000e24f",
+      "uplinkId": 34726,
+      "nsTime": "2026-01-26T09:40:51.332149029+00:00",
+      "timeSinceGpsEpoch": "1453455669.229s",
+      "rssi": -116,
+      "snr": -6.8,
+      "channel": 2,
+      "location": {
+        "latitude": 62.4544,
+        "longitude": -114.361,
+        "altitude": 231
+      },
+      "context": "hSzOYw=="
+    }
+  ],
+  "txInfo": {
+    "frequency": 904300000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

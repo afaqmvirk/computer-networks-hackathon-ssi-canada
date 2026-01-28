@@ -1,0 +1,54 @@
+{
+  "deduplicationId": "6f35df38-4c3b-4b60-97c4-ec21ba8f40c6",
+  "time": "2026-01-25T09:36:01.134261863+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "5fe1c19e-491a-4968-9a4a-622c073e4a0c",
+    "applicationName": "YK Testing",
+    "deviceProfileId": "ec984c9a-ce66-4317-8189-6fe73584db84",
+    "deviceProfileName": "SW3L",
+    "deviceName": "Flow Sensor 1",
+    "devEui": "a8404109a18870eb",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "004c8a19",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 67,
+  "fPort": 5,
+  "confirmed": false,
+  "data": "HwEAAgAOWA==",
+  "object": {
+    "FIRMWARE_VERSION": "1.0.0",
+    "SUB_BAND": 0,
+    "FREQUENCY_BAND": "US915",
+    "BAT": 3.672
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "0016c001f17adc38",
+      "uplinkId": 1040802431,
+      "nsTime": "2026-01-25T09:36:00.919489882+00:00",
+      "rssi": -101,
+      "snr": 2.25,
+      "channel": 6,
+      "rfChain": 1,
+      "location": {},
+      "context": "FVOcKw==",
+      "crcStatus": "CRC_OK"
+    }
+  ],
+  "txInfo": {
+    "frequency": 905100000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

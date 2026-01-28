@@ -1,0 +1,56 @@
+{
+  "deduplicationId": "ee91b497-628e-45d7-a2f0-a12907a14b5a",
+  "time": "2026-01-17T13:00:34.414399581+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "5fe1c19e-491a-4968-9a4a-622c073e4a0c",
+    "applicationName": "YK Testing",
+    "deviceProfileId": "60ba97e4-d689-4a65-935a-acb5879b1239",
+    "deviceProfileName": "Multitech RBS301 Temp Sensor",
+    "deviceName": "NEW ATH 1",
+    "devEui": "7894e80000054e0c",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "010f8b0e",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 35896,
+  "fPort": 1,
+  "confirmed": false,
+  "data": "FgEIADAAAAAAAAA=",
+  "object": {
+    "tamperSinceLastReset": 0,
+    "tamperState": 1,
+    "errorWithLastDownlink": 0,
+    "accumulationCount": 0,
+    "radioCommError": 0,
+    "batteryLevel": 3,
+    "batteryLow": 0
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "0016c001f17adc38",
+      "uplinkId": 2731003242,
+      "nsTime": "2026-01-17T13:00:34.201065658+00:00",
+      "rssi": -59,
+      "snr": 11.25,
+      "channel": 2,
+      "location": {},
+      "context": "Aiv/5A==",
+      "crcStatus": "CRC_OK"
+    }
+  ],
+  "txInfo": {
+    "frequency": 904300000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

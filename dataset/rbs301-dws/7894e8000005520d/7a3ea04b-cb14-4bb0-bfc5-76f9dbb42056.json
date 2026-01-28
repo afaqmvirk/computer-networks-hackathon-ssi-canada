@@ -1,0 +1,20 @@
+{
+  "deduplicationId": "0ec73edb-7293-426e-b60e-dbd11203fa3d",
+  "time": "2026-01-16T21:18:08.349+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "675582a5-5e7b-4e33-86ea-3325b7cb88e4",
+    "applicationName": "L3",
+    "deviceProfileId": "d08ab548-90d8-4d7f-897b-af92d741a4f7",
+    "deviceProfileName": "rbs301-dws",
+    "deviceName": "Door Sensor 09",
+    "devEui": "7894e8000005520d",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "margin": 0,
+  "externalPowerSource": false,
+  "batteryLevelUnavailable": true,
+  "batteryLevel": 0
+}

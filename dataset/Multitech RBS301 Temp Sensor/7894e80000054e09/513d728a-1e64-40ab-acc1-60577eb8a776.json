@@ -1,0 +1,18 @@
+{
+  "deduplicationId": "f36b2dc9-a5a3-4746-847e-cd1c1944cea9",
+  "time": "2026-01-20T10:26:28.808+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "675582a5-5e7b-4e33-86ea-3325b7cb88e4",
+    "applicationName": "L3",
+    "deviceProfileId": "60ba97e4-d689-4a65-935a-acb5879b1239",
+    "deviceProfileName": "Multitech RBS301 Temp Sensor",
+    "deviceName": "Temp Sensor 03 - Duplex Unit 1 Basement",
+    "devEui": "7894e80000054e09",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "01d47a1f",
+  "regionConfigId": "us915_1"
+}

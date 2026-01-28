@@ -1,0 +1,58 @@
+{
+  "deduplicationId": "fce92112-4159-4f0d-9ec5-72aaec0cf5fd",
+  "time": "2026-01-27T03:18:10.634+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "675582a5-5e7b-4e33-86ea-3325b7cb88e4",
+    "applicationName": "L3",
+    "deviceProfileId": "6c94d1f8-6bbb-42af-b877-253ecc501987",
+    "deviceProfileName": "rbs305-ath",
+    "deviceName": "T/H Sensor 02 - Unit #8",
+    "devEui": "7894e80000058754",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "0061336b",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 45,
+  "fPort": 1,
+  "confirmed": false,
+  "data": "GQ0AFRAJAA==",
+  "object": {
+    "humidity": 9,
+    "temperature": 21,
+    "Counter": 9,
+    "Protocol": 1,
+    "Type": "ATH",
+    "Event": "Periodic Report"
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "008000000002aa4b",
+      "uplinkId": 60723,
+      "nsTime": "2026-01-27T03:18:10.700751655+00:00",
+      "timeSinceGpsEpoch": "1453519108.634s",
+      "rssi": -77,
+      "snr": 9.2,
+      "location": {
+        "latitude": 61.3523,
+        "longitude": -117.64842,
+        "altitude": 155
+      },
+      "context": "lGhf6w=="
+    }
+  ],
+  "txInfo": {
+    "frequency": 903900000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

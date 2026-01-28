@@ -1,0 +1,56 @@
+{
+  "deduplicationId": "822bfba8-bc84-4934-b070-37fca50cbdae",
+  "time": "2026-01-24T21:19:57.387+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "675582a5-5e7b-4e33-86ea-3325b7cb88e4",
+    "applicationName": "L3",
+    "deviceProfileId": "d08ab548-90d8-4d7f-897b-af92d741a4f7",
+    "deviceProfileName": "rbs301-dws",
+    "deviceName": "Door Sensor 09",
+    "devEui": "7894e8000005520d",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "006f7fe7",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 284,
+  "fPort": 1,
+  "confirmed": false,
+  "data": "H/sAlQE=",
+  "object": {
+    "subBand": 0,
+    "lastDownlinkRssi": -107,
+    "event": "LINK_QUALITY",
+    "lastDownlinkSnr": 1
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "008000000002aa4b",
+      "uplinkId": 17103,
+      "nsTime": "2026-01-24T21:19:57.453688618+00:00",
+      "timeSinceGpsEpoch": "1453324815.387s",
+      "rssi": -104,
+      "snr": 8.5,
+      "location": {
+        "latitude": 61.3523,
+        "longitude": -117.64842,
+        "altitude": 137
+      },
+      "context": "qXGFqw=="
+    }
+  ],
+  "txInfo": {
+    "frequency": 903900000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}

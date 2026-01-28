@@ -1,0 +1,20 @@
+{
+  "deduplicationId": "8031d9e7-ff2c-48c3-9988-3b142131cf76",
+  "time": "2026-01-27T17:48:37.869+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "675582a5-5e7b-4e33-86ea-3325b7cb88e4",
+    "applicationName": "L3",
+    "deviceProfileId": "6c94d1f8-6bbb-42af-b877-253ecc501987",
+    "deviceProfileName": "rbs305-ath",
+    "deviceName": "T/H Sensor 02 - Unit #8",
+    "devEui": "7894e80000058754",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "margin": 0,
+  "externalPowerSource": false,
+  "batteryLevelUnavailable": true,
+  "batteryLevel": 0
+}

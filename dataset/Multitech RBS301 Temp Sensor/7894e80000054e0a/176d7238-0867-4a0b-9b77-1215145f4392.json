@@ -1,0 +1,56 @@
+{
+  "deduplicationId": "38676aaf-be8d-4089-bb03-2e6daaa31c3a",
+  "time": "2026-01-18T10:36:57.885+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "675582a5-5e7b-4e33-86ea-3325b7cb88e4",
+    "applicationName": "L3",
+    "deviceProfileId": "60ba97e4-d689-4a65-935a-acb5879b1239",
+    "deviceProfileName": "Multitech RBS301 Temp Sensor",
+    "deviceName": "Temp Sensor 04 - Triplex Basement",
+    "devEui": "7894e80000054e0a",
+    "deviceClassEnabled": "CLASS_A",
+    "tags": {}
+  },
+  "devAddr": "018a5a09",
+  "adr": true,
+  "dr": 3,
+  "fCnt": 6795,
+  "fPort": 1,
+  "confirmed": false,
+  "data": "GhkAFDA=",
+  "object": {
+    "eventType": "PERIODIC_REPORT",
+    "temperature": 20,
+    "humidity": 0
+  },
+  "rxInfo": [
+    {
+      "gatewayId": "008000000002aa4b",
+      "uplinkId": 59241,
+      "nsTime": "2026-01-18T10:36:57.954767402+00:00",
+      "timeSinceGpsEpoch": "1452767835.885s",
+      "rssi": -108,
+      "snr": 4,
+      "channel": 1,
+      "location": {
+        "latitude": 61.35228,
+        "longitude": -117.64856,
+        "altitude": 148
+      },
+      "context": "xzoPyw=="
+    }
+  ],
+  "txInfo": {
+    "frequency": 904100000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 7,
+        "codeRate": "CR_4_5"
+      }
+    }
+  },
+  "regionConfigId": "us915_1"
+}
