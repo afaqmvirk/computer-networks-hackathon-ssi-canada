@@ -1,0 +1,4 @@
+# Phase 1 ingest uses only Python stdlib (json, pathlib, sqlite3).
+# Phase 2 API and dashboard:
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0

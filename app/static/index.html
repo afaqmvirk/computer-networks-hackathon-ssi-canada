@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LoRaWAN Dataset - Single-device views</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+</head>
+<body>
+  <a href="#card-device" class="skip-link">Skip to main content</a>
+  <aside class="app-sidebar">
+    <header class="app-header">
+      <img src="images/logo.svg" alt="" width="40" height="40" class="app-logo" />
+      <div class="app-header-text">
+        <h1>LoRaWAN Dataset</h1>
+        <p class="app-subtitle">Device and network monitoring</p>
+      </div>
+    </header>
+    <nav>
+      <p class="nav-section-label">Overview</p>
+      <a href="#dashboard" data-view="dashboard"><span class="nav-icon nav-icon-dashboard" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span> Dashboard</a>
+      <p class="nav-section-label">Sites</p>
+      <a href="#site" data-view="site"><span class="nav-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span> Site (by gateway)</a>
+      <a href="#map" data-view="map"><span class="nav-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2v20"/></svg></span> Map</a>
+      <p class="nav-section-label">Devices</p>
+      <a href="#level" data-view="level"><span class="nav-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M4 8h16M4 12h16M4 16h16"/></svg></span> Level</a>
+      <a href="#soil" data-view="soil"><span class="nav-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c-4 0-5-4-5-8s2-8 5-8 5 4 5 8-1 8-5 8z"/><path d="M12 14c-2 0-2-2-2-4s1-4 2-4 2 2 2 4-0 4-2 4z"/></svg></span> Soil</a>
+      <a href="#climate" data-view="climate"><span class="nav-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 14.76V20h4a2 2 0 0 0 0-4h-4z"/><path d="M14 4v6.24M10 4v2M18 8V6a2 2 0 0 0-4 0v2M6 14v-2a2 2 0 0 1 4 0v2"/><circle cx="12" cy="12" r="4"/></svg></span> Climate</a>
+      <a href="#doors" data-view="doors"><span class="nav-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 4v16M20 4v16M4 12h16"/></svg></span> Doors</a>
+      <a href="#sw3l" data-view="sw3l"><span class="nav-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></span> Flow (SW3L)</a>
+      <p class="nav-section-label">Network</p>
+      <a href="#health" data-view="health"><span class="nav-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span> Device health</a>
+      <a href="#correlation" data-view="correlation"><span class="nav-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4 12h4M18 12h4"/><circle cx="12" cy="12" r="4"/></svg></span> Door and climate</a>
+    </nav>
+  </aside>
+  <main class="app-main" id="app-main">
+  <div class="api-unavailable" id="api-unavailable" style="display: none;" aria-live="polite" aria-atomic="true"></div>
+  <details class="card" style="margin-bottom: 0.5rem;"><summary class="meta" style="cursor: pointer;">Learn more (RSSI, SNR, gateway)</summary>
+    <p class="meta" style="margin: 0.5rem 0 0;">RSSI = received signal strength (dBm); closer to 0 is stronger. SNR = signal-to-noise ratio; higher is better. Gateways are radio sites that receive device uplinks; location here is where the gateway received the packet, not the device position. <a href="https://lora-alliance.org/" target="_blank" rel="noopener" style="color: var(--accent);">LoRa Alliance</a></p>
+  </details>
+
+  <div class="card" id="card-dashboard" style="display: none;">
+    <h2 class="card-title">Dashboard</h2>
+    <div id="dashboard-loading" class="meta"><span class="spinner" aria-hidden="true"></span> Loading...</div>
+    <div id="dashboard-err" class="error error-message"></div>
+    <div id="dashboard-content" class="dashboard-layout" style="display: none;">
+      <div class="dashboard-left">
+        <h3 class="dashboard-section-title">Sites</h3>
+        <div id="dashboard-sites" class="dashboard-sites"></div>
+        <h3 class="dashboard-section-title">Device types</h3>
+        <div id="dashboard-device-cards" class="dashboard-device-cards"></div>
+        <h3 class="dashboard-section-title">Recent insights (anomalies)</h3>
+        <div id="dashboard-insights" class="dashboard-insights"></div>
+      </div>
+      <div class="dashboard-right">
+        <h3 class="dashboard-section-title">Sites on map</h3>
+        <div id="dashboard-globe" class="dashboard-globe"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="card-device">
+    <h2 class="card-title">Device</h2>
+    <div class="device-toolbar">
+      <div class="device-toolbar-row">
+        <label>Device type</label>
+        <select id="profile"></select>
+        <label>Device</label>
+        <select id="device"></select>
+        <label>Time range</label>
+        <select id="range">
+          <option value="all">Full window</option>
+          <option value="24h">Last 24 hours</option>
+        </select>
+      </div>
+      <div class="device-toolbar-row">
+        <label title="Application port number">Port (optional)</label>
+        <select id="fport" title="Application port number">
+          <option value="">All</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <button type="button" id="btn-passport" class="btn-secondary">Passport</button>
+        <button type="button" id="btn-export-csv" class="btn-secondary">Export CSV</button>
+        <label class="checkbox-label">
+          <input type="checkbox" id="auto-refresh" />
+          <span class="meta">Live / auto-refresh (15 s)</span>
+        </label>
+        <span class="meta" id="last-updated"></span>
+      </div>
+    </div>
+    <div class="card" id="passport-panel" style="display: none; margin-top: 0.5rem;">
+      <div class="meta" id="passport-loading"><span class="spinner" aria-hidden="true"></span> Loading...</div>
+      <div id="passport-content"></div>
+    </div>
+    <div id="device-door-summary" class="door-summary" style="display: none; margin-bottom: 0.5rem;"></div>
+    <div id="door-time-wrap" class="door-charts-wrap" style="display: none;">
+      <h4 class="door-chart-heading">Time open vs closed</h4>
+      <div class="door-time-chart-wrap">
+        <canvas id="door-time-chart"></canvas>
+      </div>
+    </div>
+    <div id="door-gantt-wrap" class="door-charts-wrap" style="display: none;">
+      <h4 class="door-chart-heading">Door state over time</h4>
+      <div id="door-gantt" class="door-gantt" aria-label="Open (red) and closed (gray) segments over time"></div>
+    </div>
+    <div class="chart-wrap">
+      <canvas id="chart"></canvas>
+    </div>
+    <div id="device-anomalies" style="margin-top: 0.5rem;"></div>
+    <div class="meta" id="meta"></div>
+    <div class="error error-message" id="err" aria-live="polite" aria-atomic="true"></div>
+  </div>
+
+  <div class="card" id="card-health" style="display: none;">
+    <h2 class="card-title">Device health</h2>
+    <p class="meta">All devices: last seen, battery, RSSI, SNR. Click a column header to sort. Scroll horizontally on small screens.</p>
+    <div id="health-loading" class="meta"><span class="spinner" aria-hidden="true"></span> Loading...</div>
+    <div id="health-error" class="error error-message"></div>
+    <div id="health-wrap" class="table-wrap">
+      <table id="health-table"><thead><tr><th data-sort="device">Device</th><th data-sort="type">Type</th><th data-sort="last_seen">Last seen</th><th data-sort="battery">Battery</th><th data-sort="rssi">RSSI</th><th data-sort="snr">SNR</th><th data-sort="margin">Margin</th><th data-sort="power">Power</th></tr></thead><tbody></tbody></table>
+    </div>
+  </div>
+
+  <div class="card" id="card-map" style="display: none;">
+    <h2 class="card-title">Gateway map</h2>
+    <p class="meta">Click a gateway pin to open Site view. Weak links: devices with low signal (RSSI &lt; -100).</p>
+    <div id="map-container"></div>
+    <div id="map-weak-links" class="meta" style="margin-top: 0.5rem;"></div>
+    <div class="error error-message" id="map-err"></div>
+  </div>
+
+  <div class="card" id="card-site" style="display: none;">
+    <h2 class="card-title">Site (by gateway)</h2>
+    <div id="site-banner" class="site-banner" style="display: none; margin-bottom: 0.75rem;">
+      <img id="site-banner-img" class="site-banner-img" src="images/site-banner-placeholder.svg" alt="" />
+      <span id="site-banner-caption" class="site-banner-caption meta"></span>
+    </div>
+    <div class="row">
+      <label>Gateway</label>
+      <select id="gateway"></select>
+      <span class="meta" id="site-location"></span>
+    </div>
+    <div id="site-summary"></div>
+    <div class="scrubber-row" id="site-scrubber-wrap" style="display: none;">
+      <label class="meta">Replay timeline: show state as of </label>
+      <input type="range" id="site-scrubber" min="0" max="1" value="1" step="0.001" />
+      <span class="meta" id="site-scrubber-time"></span>
+    </div>
+    <div id="site-state-as-of" style="display: none; font-size: 0.875rem; margin-top: 0.5rem;"></div>
+    <div class="chart-wrap" style="height: 200px;"><canvas id="chart-site"></canvas></div>
+    <div id="site-health"></div>
+    <div class="meta" id="site-meta"></div>
+    <div class="error error-message" id="site-err"></div>
+  </div>
+
+  <div class="card" id="card-correlation" style="display: none;">
+    <h2 class="card-title">Door and climate</h2>
+    <div class="row">
+      <label>Gateway</label>
+      <select id="gateway-correlation"></select>
+    </div>
+    <p class="meta">Door open/close (step) + temperature and humidity at this gateway.</p>
+    <div class="chart-wrap">
+      <canvas id="chart-correlation"></canvas>
+    </div>
+    <div id="correlation-anomalies" style="margin-top: 0.5rem;"></div>
+    <div class="meta" id="correlation-meta"></div>
+    <div class="error error-message" id="correlation-err"></div>
+  </div>
+
+  </main>
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/url-state.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
