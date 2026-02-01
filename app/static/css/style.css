@@ -574,8 +574,10 @@ select:focus-visible {
   overflow: hidden;
   background: var(--bg);
   border: 1px solid var(--border);
+  position: relative;
 }
 .dashboard-globe .leaflet-container { height: 100%; border-radius: 8px; }
+.dashboard-globe canvas { width: 100% !important; height: 100% !important; display: block; border-radius: 8px; }
 .dashboard-dt-device { font-size: 0.8rem; margin-bottom: 0.2rem; }
 
 /* Site view: devices at site */

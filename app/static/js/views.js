@@ -383,7 +383,13 @@
       window.LoRaWAN.dashboardDeviceCardCharts = [];
     }
     var globe = window.LoRaWAN.dashboardGlobe;
-    if (globe && globe.remove) { globe.remove(); window.LoRaWAN.dashboardGlobe = null; }
+    if (globe) {
+      if (typeof globe._destructor === 'function') globe._destructor();
+      else if (globe.remove) globe.remove();
+      var globeContainer = document.getElementById('dashboard-globe');
+      if (globeContainer) globeContainer.innerHTML = '';
+      window.LoRaWAN.dashboardGlobe = null;
+    }
   }
 
   function createDashboardCharts(profiles, gateways) {
@@ -635,7 +641,50 @@
       if (loadingEl) loadingEl.style.display = 'none';
       if (contentEl) contentEl.style.display = 'flex';
       var withLoc = (window.LoRaWAN.dashboardGatewaysList || []).filter(function (g) { return g.lat != null && g.lon != null; });
-      if (globeEl && withLoc.length && window.L) {
+      if (globeEl && withLoc.length && typeof window.Globe === 'function') {
+        try {
+          var prevGlobe = window.LoRaWAN.dashboardGlobe;
+          if (prevGlobe) {
+            if (typeof prevGlobe._destructor === 'function') prevGlobe._destructor();
+            else if (prevGlobe.remove) prevGlobe.remove();
+            globeEl.innerHTML = '';
+          }
+          requestAnimationFrame(function () {
+            requestAnimationFrame(function () {
+              if (!globeEl.offsetParent) return;
+              var pointsData = withLoc.map(function (g) {
+                return {
+                  lat: g.lat,
+                  lng: g.lon,
+                  name: (g.gateway_id || '') + ' — ' + (g.event_count || 0) + ' events'
+                };
+              });
+              var globe = new window.Globe(globeEl)
+                .globeImageUrl('https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-night.jpg')
+                .backgroundImageUrl('https://cdn.jsdelivr.net/npm/three-globe/example/img/night-sky.png')
+                .showAtmosphere(true)
+                .atmosphereColor('lightskyblue')
+                .pointColor(function () { return '#58a6ff'; })
+                .pointAltitude(0.08)
+                .pointRadius(0.4)
+                .pointsMerge(false)
+                .pointLabel(function (d) { return d.name; })
+                .pointsData(pointsData)
+                .pointLat(function (d) { return d.lat; })
+                .pointLng(function (d) { return d.lng; });
+              globe.width(globeEl.offsetWidth);
+              globe.height(globeEl.offsetHeight);
+              window.LoRaWAN.dashboardGlobe = globe;
+              setTimeout(function () {
+                if (globeEl.offsetWidth && globeEl.offsetHeight && globe.width) {
+                  globe.width(globeEl.offsetWidth);
+                  globe.height(globeEl.offsetHeight);
+                }
+              }, 100);
+            });
+          });
+        } catch (err) {}
+      } else if (globeEl && withLoc.length && window.L) {
         try {
           if (window.LoRaWAN.dashboardGlobe && window.LoRaWAN.dashboardGlobe.remove) window.LoRaWAN.dashboardGlobe.remove();
           requestAnimationFrame(function () {
