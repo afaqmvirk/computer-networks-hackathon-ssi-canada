@@ -1,4 +1,4 @@
-# LoRaWAN Dataset — SSI Canada Hackathon
+# LoRaWATsGoingOn — CCSS x SSI Canada Hackathon
 
 A full-stack **LoRaWAN monitoring dashboard** for the Computer Networks Hackathon in partnership with [SSI Canada](https://www.ssicanada.com) (January 31st, 2026). Ingest ChirpStack uplink JSON into SQLite, serve it via a FastAPI backend, and explore devices, sites, and time-series in a single-page web app.
 
